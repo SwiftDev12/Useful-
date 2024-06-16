@@ -54,7 +54,7 @@ class DeviceInfo: ObservableObject {
         self.isInSandbox = DeviceInfo.checkSandboxStatus()
         self.appSize = DeviceInfo.getAppSize()
         self.installedBrowsers = DeviceInfo.getInstalledBrowsers()
-        self.modelIdentifier = DeviceInfo.getModelIdentifier() // Initialize model identifier
+        self.modelIdentifier = DeviceInfo.getModelIdentifier() 
 
         startMonitoring()
         startOrientationMonitoring()
@@ -90,7 +90,7 @@ class DeviceInfo: ObservableObject {
         self.isInSandbox = DeviceInfo.checkSandboxStatus()
         self.appSize = DeviceInfo.getAppSize()
         self.installedBrowsers = DeviceInfo.getInstalledBrowsers()
-        self.modelIdentifier = DeviceInfo.getModelIdentifier() // Update model identifier
+        self.modelIdentifier = DeviceInfo.getModelIdentifier()
     }
     
     private static func getCPUArchitecture() -> String {
